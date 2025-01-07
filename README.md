@@ -14,6 +14,14 @@
 - libusb1
 - xrandr
 
+## Как запустить Nix пакет?
+```bash
+git clone https://github.com/dixxe/bslauncher-linux.git
+cd bslauncher-linux
+nix-build
+```
+
+
 # У меня нету пакетного менеджера Nix
 Чтобы запустить лаунчер на Debian я подготовил one-line установщик зависимостей.
 ```bash
@@ -22,6 +30,7 @@ sudo apt-get install openjdk-8-jre pulseaudio libxxf86vm-dev libgl-dev libx11-6 
 
 ## Команда для запуска
 ```bash
-cd path/to/bslauncher.jar
+git clone https://github.com/dixxe/bslauncher-linux.git
+cd bslauncher-linux
 java -jar bslauncher.jar
 ```
